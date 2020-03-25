@@ -9,7 +9,7 @@ public class Task3Palindrom {
 		for(int i=array.length-1; i>=0; i--) {
 			rev=rev+array[i];
 		}
-		if(rev.equalsIgnoreCase(word)) {
+		if(rev.equalsIgnoreCase()) {
 			System.out.println(word+" is palindrom");
 		}else {
 			System.out.println(word+" is not palindrom");

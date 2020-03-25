@@ -3,19 +3,12 @@ package com.syntax.class11;
 public class DarraysTask_1 {
 
 	public static void main(String[] args) {
-		// TODO Create an array of cars : american, german, korean, italian. 
-		//Then retrieve all values from that array using 2 different loops
-		String[] car= {"American", "German", "Korean", "Italian"};
 		
-		for(int x=0; x<car.length; x++) {
-			System.out.print(car[x]);
+		for (int i=0; i<9; i++) {
+			for (int j=0; j<=9; j++) {
+				System.out.println(i+""+j);
+			}
 		}
-System.out.println();
-
-   for(String items:car) {
-	   System.out.println(items);
-	
-}
 	}
 
 }
