@@ -24,12 +24,6 @@ public class Students {
 		
 		System.out.println("Student 1 is "+st1.studentName+ " his ID is "+st1.studentID);
 		System.out.println("Student 2 is "+st2.studentName+ " his ID is "+st2.studentID);
-		System.out.println("total students "+numberofStudents);
-	
-		
-		
+		System.out.println("total number of students "+numberofStudents);	
 	}
-	
-	
-
 }
