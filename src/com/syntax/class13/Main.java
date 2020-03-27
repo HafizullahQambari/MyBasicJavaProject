@@ -1,20 +1,20 @@
 package com.syntax.class13;
 
-class Main{
-	  
-	  String censorLetter(String Letter1, char Character){
-	  Letter1=Letter1.replace(Character, '*');
-	  
-	  return Letter1;
-	  }
-	  public static void main(String[] args){
-	    
-	     Main obj= new Main();
-	     String word=obj.censorLetter("computer science", 'c');
-	     String word1=obj.censorLetter("trick or treat", 't');
-	     System.out.println(word);
-	     System.out.println(word1);
-	     
-	     
-	  }
+class Main {
+	static int a;
+	
+	public int num(){
+		a++;
 	}
+	public void counter() {
+		System.out.println(a);
+	}
+	public static void main(String[] args) {
+		
+		Main obj1=new Main();
+		Main obj2=new Main();
+		Main obj3=new Main();
+		obj1.counter();
+	}
+}
+	
