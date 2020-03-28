@@ -1,20 +1,13 @@
 package com.syntax.class13;
 
 class Main {
-	static int a;
-	
-	public int num(){
-		a++;
-	}
-	public void counter() {
-		System.out.println(a);
-	}
-	public static void main(String[] args) {
-		
-		Main obj1=new Main();
-		Main obj2=new Main();
-		Main obj3=new Main();
-		obj1.counter();
-	}
+    public static String surround(String s, String a) {
+    	return s.replaceAll(a, ("("+a+")"));
+    }
+    
+    //test case below (dont change):
+    public static void main(String[] args){
+        System.out.println(surround("abcabcabc","c")); //"(abc)(abc)(abc)"
+        System.out.println(surround("technology", "o")); //"(th)ere, on plane(th) ho(th)"
+    }
 }
-	
