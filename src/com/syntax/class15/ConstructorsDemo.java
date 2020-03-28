@@ -16,7 +16,13 @@ public class ConstructorsDemo {
 		System.out.println(" with integer value");
 	}
 	ConstructorsDemo(String s, int num){
-		System.out.println(" with String and integer");
+		System.out.println(" with String and integer value");
+	}
+	void ConstructorsDemo() {
+		System.out.println(" I am a return type method not a constructor");
+	}
+	void hi(String a, String b) {
+		System.out.println("methode with parameter");
 	}
 	
 	
@@ -27,6 +33,7 @@ public class ConstructorsDemo {
 		ConstructorsDemo obj1=new ConstructorsDemo("it rainy day");
 		ConstructorsDemo obj2= new ConstructorsDemo( 12);
 		ConstructorsDemo obj3=new ConstructorsDemo("yes", 13);
+		obj.ConstructorsDemo();
 		
 		
 	}
