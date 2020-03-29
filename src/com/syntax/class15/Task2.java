@@ -18,13 +18,13 @@ public class Task2 {
 		int average=(gradeA+gradeB+gradeC+gradeD+gradeE)/5;
 		System.out.println("student "+StudentsName+" Average grade is "+ average);
 	}
-	Task2(String newName, int newgradeA, int newgradeB, int newgradeC, int newgradeD, int newgradeE){
-		StudentsName=newName;
-		gradeA=newgradeA;
-		gradeB=newgradeB;
-		gradeC=newgradeC;
-		gradeD=newgradeD;
-		gradeE=newgradeE;
+	Task2(String StudentName, int gradeA, int gradeB, int gradeC, int gradeD, int gradeE){
+		this.StudentsName=StudentName;
+		this.gradeA=gradeA;
+		this.gradeB=gradeB;
+		this.gradeC=gradeC;
+		this.gradeD=gradeD;
+		this.gradeE=gradeE;
 		
 		
 	}

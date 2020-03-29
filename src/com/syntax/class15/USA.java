@@ -5,11 +5,11 @@ public class USA {
 	String state, capital;
 	 
 	public void display() {
-		System.out.println(state+" and its capital is"+ capital);
+		System.out.println(state+" and its capital is "+ capital);
 	}
-	public USA(String newstate, String newcapital) {
-		state=newstate;
-		capital=newcapital;
+	public USA(String state, String capital) {
+		this.state=state;
+		this.capital=capital;
 		
 		
 		
