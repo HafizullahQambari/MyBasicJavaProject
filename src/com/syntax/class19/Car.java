@@ -1,52 +1,34 @@
 package com.syntax.class19;
 
 
+public class Car {
 
-class Car{
-	  String make;
-	  String model;
-	  int numberOfDoors;
-	  int topSpeed;
-	  double price;
-	       
-	  
-	  Car(String make, String model, int numberOfDoors, int topSpeed, double price){
-	    System.out.println(make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price);
-	    this.make=make;
-	    this.model=model;
-	    this.numberOfDoors=numberOfDoors;
-	    this.topSpeed=topSpeed;
-	    this.price=price;
-	  }
-	  Car(String make, String model, int topSpeed, double price){
-	    
-	    System.out.println(make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price);
-	  }
-	  Car( int numberOfDoors, int topSpeed, double price){
-	    
-	   System.out.println(make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price); 
-	  }
-	  Car(String make, String model, int numberOfDoors, int topSpeed){
-	    System.out.println(make+" "+model+" "+numberOfDoors+" "+topSpeed+" "+price);
-	  }
-	  public static void main(String[] args) {
-		  Car car1=new Car("Toyota", "Prius", 4, 120, 300000.0);
-		  Car car2=new Car("Toyota", "Prius", 4, 120, 300000.0);
-		  Car car3=new Car(4, 120, 300000.0);
-		  Car car4=new Car("Toyota", "Prius", 4, 90);
-	  }
+	String make, model;
+
+	public Car(){
+		System.out.println("I am parent class constructor");
 	}
-    
-	    
-	   
-	    
-	    
-	    
-	    
-	  
-	  
-	  
 
+	public Car(String make, String model) {
+		this.make=make;
+		this.model=model;
+	}
+}
 
+class Mercedes extends Car{
 
+	String sportModel;
 
+	public Mercedes(){
+		//super();//compiler add super() by default
+		System.out.println("I am Child class constructor");  } 
+
+	public Mercedes(String make, String model,String sportModel) {
+		//super(make, model);
+		this.sportModel=sportModel;
+	}
+
+	public void display() {
+		System.out.println("I have "+make+" "+model+" "+sportModel);
+	}
+}          
