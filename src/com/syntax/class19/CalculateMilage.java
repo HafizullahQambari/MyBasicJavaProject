@@ -2,7 +2,7 @@ package com.syntax.class19;
 
 import java.util.Scanner;
 
-public class Parent
+public class CalculateMilage
 {
     public static void main(String[] args)
     {
