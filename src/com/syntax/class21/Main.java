@@ -1,19 +1,12 @@
 package com.syntax.class21;
 
-class Main {
-	  
-	public static final double avgElements(int[] num) {
-		
-		double sum=0;
-		for(int i=0; i<num.length; i++) {
-			sum=sum+num[i];
-		}
-			double result=sum/num.length;
-			return result;
-			
-		}
-		public static void main(String[] args) {
-			int[] a = {2,7,3,8,4};
-			System.out.println(avgElements(a)); //should print 4.8
-		}
+class Main{
+	int t=20;
+	
+}
+class A{
+	public static void main(String[] args) {
+		Main t1=new Main();
+		System.out.println(t1.t);
 	}
+}
