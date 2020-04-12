@@ -8,7 +8,7 @@ public class TestRegistration {
 		System.out.println(reg.getEmail());
 		reg.setUserName("Hafizullah");
 		System.out.println(reg.getUserName());
-		reg.setPassword("hi120@1");
+		reg.setPassword("hafiz123");
 		System.out.println(reg.getPassword());
 	}
 

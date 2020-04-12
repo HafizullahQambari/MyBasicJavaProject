@@ -24,11 +24,25 @@ public class Registration {
 	public void setUserName(String userName) {
 		if(!userName.isEmpty() && userName.length()>6) {
 			this.userName=userName;
+		}else {
+			System.out.println("the user name is shor");
 		}
 	}
 	public void setPassword(String password) {
-		if(!password.isEmpty() && password.length()>6) {
-			this.password=password;
+		if(!password.isEmpty()) {
+			if(password.length()>6) {
+				if(!password.contains(userName)) {
+					this.password=password;
+				}else {
+					System.out.println("password can not contain username");
+				}
+				
+			}else {
+				System.out.println("password can not be shorter than 6 digists");
+			}
+			
+		}else {
+			System.out.println("password can not be empty");
 		}
 	}
 }
