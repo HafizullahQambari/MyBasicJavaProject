@@ -1,24 +1,19 @@
 package com.syntax.gropuHW;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+class Repl{
+public static void main(String[] args) {
 
-class Repl {
-	
-  public static void main(String[] args){
+    int n = 10, t1 = 0, t2 = 1;
     
-	  Scanner scan=new Scanner(System.in);
-	 
-	  int num=scan.nextInt();
-	  
-    ArrayList<Number> num1=new ArrayList<>();
-    
-   for(int i=0; i<num1.size(); i++) {
-	   num1.get(i);
-	   
-   }
-   System.out.println(num1);
-    
-  }
 
+    for (int i = 1; i <= n; i++)
+    {
+        System.out.print(t1 + " ");
+
+        int sum = t1 + t2;
+        t1 = t2;
+        t2 = sum;
+    }
+   
+}
 }

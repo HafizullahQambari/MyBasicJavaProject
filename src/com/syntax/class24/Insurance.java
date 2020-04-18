@@ -14,9 +14,11 @@ class Car extends Insurance{
 		super(InsuranceName);
 		this.carModel=carModel;
 	}
+	@Override
 	void getQuote() {
 		System.out.println("to get insurence for "+carModel+" call "+InsuranceName+" 800 568 6545");
 	}
+	@Override
 	void cancelInsurance() {
 		System.out.println("to cancel inscurance of your "+carModel+" call "+InsuranceName+" 703 456 1234");
 	}

@@ -1,10 +1,11 @@
 package com.syntax.class24;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 public class TestInsurance {
 	public static void main(String[] args) {
 		
-		ArrayList<Insurance> insur=new ArrayList<>();
+		HashSet<Insurance> insur=new HashSet<>();
 		insur.add(new Car("State Farm", "Corolla"));
 		insur.add(new Pet("GEICO", "Dog"));
 		insur.add(new Health("Care First"));
@@ -16,11 +17,11 @@ public class TestInsurance {
 	list.cancelInsurance();
 		
 	}
-	System.out.println("=====using for loop====");
-	for(int i=0; i<insur.size(); i++) {
-		insur.get(i).getQuote();
-		insur.get(i).cancelInsurance();
-	}
+//	System.out.println("=====using for loop====");
+//	for(int i=0; i<insur.size(); i++) {
+//		insur.get(i).getQuote();
+//		insur.get(i).cancelInsurance();
+//	}
 	System.out.println("==========using enhanced loop=====");
 	for(Insurance list:insur) {
 		list.getQuote();
