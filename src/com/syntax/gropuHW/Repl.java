@@ -1,19 +1,30 @@
 package com.syntax.gropuHW;
-
+import java.util.*;
 class Repl{
-public static void main(String[] args) {
-
-    int n = 10, t1 = 0, t2 = 1;
-    
-
-    for (int i = 1; i <= n; i++)
+	
+	public static void main(String args[])
     {
-        System.out.print(t1 + " ");
-
-        int sum = t1 + t2;
-        t1 = t2;
-        t2 = sum;
+	
+        		
+        
+        List<Integer> fib=new LinkedList<>();
+        fib.add(0);
+        fib.add(1);
+        fib.add(1);
+        fib.add(2);
+        fib.add(3);
+        fib.add(5);
+        fib.add(8);
+        fib.add(13);
+        fib.add(21);
+        fib.add(34);
+        
+        for(Integer a:fib) {
+        	System.out.print(a+" ");
+        	
+        }
+        
+        
+        
     }
-   
-}
 }
