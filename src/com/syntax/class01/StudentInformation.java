@@ -9,12 +9,12 @@ String lastName="gregory";
 String grad="1st";
 String city="woodbridge";
 String state="virginia";
-String phoneNumber=2022858336l;
-	//string city="chantily"'
+String phoneNumber="2022858336l";
+	city="chantily";
 city="chantily";
 state="virginia";
-phoneNumber=2028336;
-	System.out.println(My); 
+phoneNumber="2028336";
+	System.out.println(city); 
 
 
 
