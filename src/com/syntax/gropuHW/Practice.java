@@ -1,25 +1,27 @@
 package com.syntax.gropuHW;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+
 
 class Practice {
+public static void main(String[] args) {
+	String[] strs = new String[2];
 
-		public static void main(String[] args) {
-	
-	 LinkedList<Integer> primes = new LinkedList<>();
-	    for(int p = 2; p <= 100; p++) {
-	        int count = 0;
-	        for(int i=2; i < p; i++) {
+	int indx =0;
 
-	            if (p%i == 0) {
-	                count++;
-	            }
-	        }
+	for (String s : strs) {
 
-	        if (count == 0) {
-	            primes.add(p);
-	        }   
-	    }
-	    System.out.println(primes);
-		}
-		}
+	                 strs[indx].concat(" element " + indx);
+
+	                    indx++;
+
+	}
+
+	for (indx = 0; indx < strs.length; indx++) {
+
+	                  System.out.println(strs[indx]);
+
+	}
+
+}
+}
